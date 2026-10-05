@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://REEMPLAZAR.github.io/casa-bigotes/sitemap.xml
