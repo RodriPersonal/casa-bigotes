@@ -9,7 +9,7 @@ https://rodripersonal.github.io/casa-bigotes/
 ## Estructura
 
 - `index.html`: portada y tarjetas de guías.
-- `guias/`: hub (`index.html`) y 10 guías de 1.000–1.300 palabras (FAQ, tabla, lista de comprobación).
+- `guias/`: hub (`index.html`) y 15 guías de 1.000–1.300 palabras (FAQ, tabla, lista de comprobación).
 - `og-image.png`: imagen social 1200×630.
 - `transparencia.html`: afiliación, privacidad y contacto.
 - `sobre-nosotros.html`: forma de trabajo y contacto.
