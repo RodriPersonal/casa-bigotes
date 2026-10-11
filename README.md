@@ -6,17 +6,31 @@ Escaparate editorial estático para recomendaciones de gatos de interior. No ven
 
 https://rodripersonal.github.io/casa-bigotes/
 
-## Publicación gratuita
+## Estructura
 
-1. Crear un repositorio público en GitHub.
-2. Subir el contenido de esta carpeta a la rama `main`.
-3. Activar **Settings → Pages → Deploy from a branch → main / root**.
-4. Comprobar que la portada, las guías, `robots.txt` y `sitemap.xml` se abren correctamente.
+- `index.html`: portada y tarjetas de guías.
+- `guias/`: artículos editoriales.
+- `transparencia.html`: afiliación, privacidad y contacto.
+- `sobre-nosotros.html`: forma de trabajo y contacto.
+- `styles.css`: diseño responsive y accesibilidad.
+- `verify.ps1`: comprobaciones locales sin dependencias.
 
 ## Afiliación
 
-Casa Bigotes participa en Amazon Afiliados España con el ID `casabigotes-21`. La cuenta está registrada, pero todavía no hay enlaces de productos monetizados publicados. Cuando se publiquen, deben generarse desde Amazon Afiliados/SiteStripe, llevar el identificador correcto y aparecer junto a una divulgación visible. No copiar precios, imágenes ni fichas fuera de las herramientas permitidas por el acuerdo de Amazon.
+Casa Bigotes participa en Amazon Afiliados España con el ID `casabigotes-21`. Actualmente no hay enlaces de afiliado publicados. Toda guía que incorpore enlaces debe añadir un `.aff-note` con la frase oficial de Amazon inmediatamente antes del primer enlace. Cada enlace debe llevar `rel="sponsored nofollow noopener"` y `target="_blank"`.
 
-## Restricción
+## Cómo añadir una guía
 
-El proyecto no compra inventario, muestras, dominios, anuncios ni aplicaciones de pago. Shopify permanece privado; GitHub Pages es el escaparate público.
+1. Crear el HTML con `lang="es"`, título único, meta description, canonical, Open Graph, Twitter Card y JSON-LD.
+2. Añadir la guía al sitemap.
+3. Añadir una tarjeta en la portada.
+4. Añadir enlaces relacionados sin autoenlace.
+5. Añadir el aviso `.aff-note` si contiene afiliación.
+6. Ejecutar `verify.ps1`.
+7. Revisar el diff y solo después publicar.
+
+## Privacidad y presupuesto
+
+El sitio no usa analítica, cookies propias ni dependencias externas. El proyecto no compra inventario, muestras, dominios, anuncios ni aplicaciones de pago. Shopify permanece privado; GitHub Pages es el escaparate público.
+
+La página `404.html` usa rutas absolutas `/casa-bigotes/` porque el sitio se sirve como GitHub Pages de proyecto.
