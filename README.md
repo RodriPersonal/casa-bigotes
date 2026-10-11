@@ -42,7 +42,7 @@ El email se monta con un pequeño script inline (`.mail`) para que no aparezca e
 
 ## Search Console
 
-En `index.html` hay un marcador `<!-- GSC-META-AQUI -->` en el `<head>`: ahí se pega la etiqueta de verificación de Google Search Console cuando se obtenga.
+En `index.html` hay un marcador `<meta name="google-site-verification" content="..."> (ya colocada en index.html)` en el `<head>`: ahí se pega la etiqueta de verificación de Google Search Console cuando se obtenga.
 
 ## Verificación
 
